@@ -1,125 +1,185 @@
-# README for MSSQL Database AI Analyzer
+# 🔍 MSSQL Database AI Analyzer
 
-This project provides a comprehensive solution for analyzing and querying Microsoft SQL Server databases using AI models from Ollama. It combines AI-powered query generation with direct SQL execution, making database querying more efficient and accessible through both command-line and web interfaces.
+<div align="center">
 
-## Purpose
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Python](https://img.shields.io/badge/Python-3.10+-green)
+![License](https://img.shields.io/badge/license-MIT-orange)
 
-The main goal of this project is to simplify the process of querying SQL Server databases by leveraging the power of Ollama AI models. Users can input natural language queries, and the application will automatically generate the corresponding SQL queries and execute them against the database.
+**Interact with your SQL Server database using natural language**
 
-### Features
+[Features](#-key-features) • 
+[Installation](#-installation) • 
+[Usage](#-usage) • 
+[Contributing](#-contributing) • 
+[Roadmap](#-roadmap)
 
-- Connects to an MSSQL database using PyODBC
-- Generates SQL queries based on user input and the database schema
-- Executes the generated SQL queries directly on the database
-- **NEW: Web interface with Streamlit for easier interaction**
-- **NEW: Dashboard for analyzing query history and patterns**
-- **NEW: Support for multiple Ollama models (llama3, codellama, mistral, etc.)**
-- **NEW: Enhanced schema extraction with primary keys, foreign keys, and indexes**
-- **NEW: Query history tracking and analysis**
-- Supports both English and Arabic documentation and instructions
+</div>
 
-## Prerequisites
+---
 
-Before using this application, ensure you have the following installed:
+## 🌟 Overview
 
-1. Python 3.10+
-2. PyODBC library: `pip install pyodbc`
-3. Requests library: `pip install requests`
-4. Streamlit (for web interface): `pip install streamlit`
-5. Pandas (for data handling): `pip install pandas`
-6. Plotly (for dashboard): `pip install plotly`
-7. Ollama server running locally or remotely
+This project bridges the gap between natural language and SQL queries by leveraging AI models from Ollama. Ask questions about your database in plain English (or Arabic), and get instant SQL queries and results - no SQL expertise required!
 
-## Installation
+<div align="center">
+<img src="https://img.shields.io/badge/Powered%20by-Ollama%20AI-blueviolet" alt="Powered by Ollama AI">
+</div>
 
-To set up the project, install the required dependencies by running the following command:
+## 🚀 Key Features
+
+- **Natural Language to SQL** - Ask questions in plain English and get SQL queries
+- **Web Interface** - Beautiful Streamlit UI for easy interaction
+- **Analytics Dashboard** - Track query patterns and database usage
+- **Multi-Model Support** - Choose from various Ollama models (llama3, codellama, mistral)
+- **Comprehensive Schema Analysis** - Detailed extraction of tables, relationships, and indexes
+- **Query History** - Save and analyze past queries
+- **Multilingual Support** - Documentation in English and Arabic
+
+## 📋 Prerequisites
+
+- Python 3.10+
+- Microsoft SQL Server
+- Ollama running locally or remotely
+- Required Python packages (see [Installation](#-installation))
+
+## 💻 Installation
+
+### Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/mohammednabarawy/SQL_Query_Generator.git
+cd mssql-ai-analyzer
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Configure your database connection in config.py
+# Start the web interface
+streamlit run app.py
 ```
 
-Or install individual packages:
+### Detailed Installation
 
-```bash
-pip install pyodbc requests streamlit pandas plotly matplotlib
-```
+1. Ensure you have Python 3.10+ installed
+2. Install the ODBC Driver for SQL Server
+3. Install Ollama and start the service
+4. Install the required Python packages:
+   ```bash
+   pip install pyodbc requests streamlit pandas plotly matplotlib
+   ```
+5. Configure your database connection in `config.py`
 
-## How to Use
+## 🔧 Usage
 
 ### Command Line Interface
 
-1. **Run the Script**:
+```bash
+python ollama_mssql.py
+```
 
-   ```bash
-   python ollama_mssql.py
-   ```
-2. **Enter Your Query**: After running the script, you will be prompted to enter your query in natural language (e.g., "Show all employees hired this year"). Press Enter to submit.
-3. **AI-Generated SQL**: The script will use Ollama to generate the corresponding SQL query based on your input and will execute the query against the database.
+### Web Interface
 
-### Web Interface (NEW!)
+```bash
+streamlit run app.py
+```
 
-1. **Start the Web Application**:
+### Analytics Dashboard
 
-   ```bash
-   streamlit run app.py
-   ```
-2. **Access the Web Interface**: Open your browser and navigate to `http://localhost:8501`
-3. **Enter Your Query**: Type your natural language query in the text area and click "Generate SQL Query"
-4. **View Results**: The generated SQL and query results will be displayed in the interface
+```bash
+streamlit run dashboard.py
+```
 
-### Dashboard (NEW!)
+### Example Queries
 
-1. **Start the Dashboard**:
+- "Show me the top 10 customers by total purchase amount"
+- "Find all invoices that are overdue by more than 30 days"
+- "What's the average order value by month for the last year?"
+- "List all employees hired in 2024 with their department"
 
-   ```bash
-   streamlit run dashboard.py
-   ```
-2. **Access the Dashboard**: Open your browser and navigate to `http://localhost:8501`
-3. **Analyze Query History**: View statistics about your query patterns, success rates, and most queried tables
+## ⚙️ Configuration
 
-### Example Queries:
-
-- Retrieve top 10 sales from last month: `Show top 10 sales from last month`
-- List all tables in the database: `List all tables in the database`
-- Find customers with outstanding balances: `Show customers with unpaid invoices`
-
-## Configuration (NEW!)
-
-You can customize the application by editing the `config.py` file:
+Edit `config.py` to customize:
 
 - Database connection settings
 - Ollama API endpoint
 - Default and recommended models
 - Sample data limits
 
-## Notes
+## 🛠️ Contributing
 
-- Make sure your database has a user with appropriate permissions to execute queries
-- Always validate user input to avoid SQL injection risks
-- The application uses Ollama as an AI assistant but does not replace professional SQL expertise
+We welcome contributions from the community! Here's how you can help:
+
+1. **Fork the repository** - Create your own copy of the project
+2. **Create a feature branch** - `git checkout -b feature/amazing-feature`
+3. **Commit your changes** - `git commit -m 'Add some amazing feature'`
+4. **Push to your branch** - `git push origin feature/amazing-feature`
+5. **Open a Pull Request** - We'll review and merge your contribution
+
+### Ideas for Contributions
+
+- Add support for more database systems (PostgreSQL, MySQL, etc.)
+- Implement query optimization suggestions
+- Create visualization tools for query results
+- Add support for more languages
+- Improve the AI prompts for better SQL generation
+- Write comprehensive tests
+
+## 📝 Roadmap
+
+- [ ] Support for more database systems
+- [ ] Advanced query optimization
+- [ ] User authentication and role-based access
+- [ ] Export capabilities to various formats
+- [ ] Integration with BI tools
+- [ ] Scheduled queries and alerts
+
+## 📊 Performance
+
+The application uses Ollama's AI models locally, ensuring:
+- Privacy - Your data never leaves your system
+- Speed - No network latency for AI processing
+- Customization - Fine-tune models for your specific database
+
+## 📜 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgements
+
+- Thanks to the developers of PyODBC, Requests, Streamlit, Pandas, Plotly, and Ollama
+- Special thanks to all contributors who help improve this project
 
 ---
 
-## الوثائق باللغة العربية
+<div align="center">
+
+## 📚 الوثائق باللغة العربية
+
+**محلل قواعد بيانات MSSQL باستخدام الذكاء الاصطناعي**
+
+</div>
 
 يُقدم هذا المشروع حلاً شاملاً لتحليل واستعلام قواعد بيانات Microsoft SQL Server باستخدام نماذج الذكاء الاصطناعي من Ollama. يجمع هذا التطبيق بين توليد الاستعلامات باستخدام الذكاء الاصطناعي وتنفيذ SQL المباشر، مما يجعل عملية الاستعلام أكثر كفاءة وسهولة من خلال واجهة سطر الأوامر وواجهة الويب.
 
-### الغرض من المشروع
+### 🎯 الغرض من المشروع
 
 الهدف الرئيسي من هذا المشروع هو تبسيط عملية استعلام قواعد البيانات عبر SQL Server باستخدام قوة نماذج Ollama AI. يمكن للمستخدمين إدخال استعلامات باللغة الطبيعية، وسيقوم التطبيق بتوليد الاستعلامات SQL المقابلة وتنفيذها على قاعدة البيانات.
 
-### المزايا
+### ✨ المزايا
 
-- الاتصال بقاعدة بيانات MSSQL باستخدام PyODBC
-- توليد استعلامات SQL بناءً على إدخال المستخدم وبيانات قاعدة البيانات
-- تنفيذ الاستعلامات المُولدة مباشرة على قاعدة البيانات
-- **جديد: واجهة ويب باستخدام Streamlit للتفاعل بشكل أسهل**
-- **جديد: لوحة تحكم لتحليل سجل الاستعلامات والأنماط**
-- **جديد: دعم لنماذج Ollama متعددة (llama3, codellama, mistral، إلخ)**
-- **جديد: استخراج مُحسّن لمخطط قاعدة البيانات مع المفاتيح الأساسية والخارجية والفهارس**
-- **جديد: تتبع وتحليل سجل الاستعلامات**
-- يدعم الوثائق والتعليمات باللغتين الإنجليزية والعربية
+- **تحويل اللغة الطبيعية إلى SQL** - اطرح أسئلة باللغة العربية أو الإنجليزية واحصل على استعلامات SQL
+- **واجهة ويب** - واجهة مستخدم جميلة باستخدام Streamlit للتفاعل السهل
+- **لوحة تحليلات** - تتبع أنماط الاستعلام واستخدام قاعدة البيانات
+- **دعم نماذج متعددة** - اختر من بين نماذج Ollama المختلفة (llama3, codellama, mistral)
+- **تحليل شامل للمخطط** - استخراج مفصل للجداول والعلاقات والفهارس
+- **سجل الاستعلامات** - حفظ وتحليل الاستعلامات السابقة
+- **دعم متعدد اللغات** - وثائق باللغتين العربية والإنجليزية
 
-## Thanks
+---
 
-Thanks to the developers of PyODBC, Requests, Streamlit, Pandas, Plotly, and Ollama for their excellent libraries!
+<div align="center">
+<p>Made with ❤️ by developers, for developers</p>
+<p>Star ⭐ this repository if you find it useful!</p>
+</div>
