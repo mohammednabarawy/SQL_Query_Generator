@@ -1,0 +1,2 @@
+Sample rows from table: mnrHrOpTrain
+

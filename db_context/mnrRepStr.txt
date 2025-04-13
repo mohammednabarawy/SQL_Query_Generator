@@ -1,0 +1,4 @@
+Sample rows from table: mnrRepStr
+
+ID	Number	Name	LName	Selected
+384198AE-ABB9-44DB-9B4C-2DF55E294637	1	نظام الصيدليات	NULL	0

@@ -1,0 +1,4 @@
+Sample rows from table: mnrCurrency
+
+ID	Number	Name	LatinName	Code	PartName	PartLatinName	PartRate	CurrencyVal	ISOCode
+73A01E45-FC1B-4000-ADCC-22A27826DCE6	1	ريال سعودي	Saudi Riyal	ر.س.	هللة	Halalat	100.0	1.0	SAR

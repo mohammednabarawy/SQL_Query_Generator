@@ -1,0 +1,6 @@
+Sample rows from table: mnrHrReligion
+
+ID	Number	Code	Name	LatinName	Notes
+3A0109C3-1BCD-4534-8E0A-1886919D0021	1.0	1	مسلم	Muslim	
+3258B94D-00B5-48DB-951B-F470E434C302	2.0	2	مسيحي	Christian	
+3CD86AFA-02AC-4DD3-BC73-D9927CFBC861	3.0	3	هندوسي	Hindu	

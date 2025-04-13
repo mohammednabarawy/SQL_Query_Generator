@@ -1,0 +1,13 @@
+Sample rows from table: mnrTaxClassification
+
+ID	Number	Code	Name	LatinName	Type	Rate
+556FF425-EE99-4F78-A65D-593214272112	0				S	15.0
+C82C07B6-7225-467A-A8F6-575C53A49E0B	1	VATEX-SA-29	الخدمات المالية	Financial services mentioned in Article29 of the VAT Regulations	E	0.0
+74704A2D-4711-4C5D-9EF2-23A0EE80B9D8	2	VATEX-SA-29-7	عقد تأمين على الحياة	Life insurance services mentioned in Article 29 of the VAT Regulations	E	0.0
+36EA9B40-E957-488B-978F-62B35CC18A02	3	VATEX-SA-30	التوريدات العقارية المعفاة من الضريبة	Real estate transactions mentioned in Article 30 of the VAT Regulations	E	0.0
+099F1D57-2383-4322-B947-EFA317C22177	4	VATEX-SA-32	صادرات السلع من المملكة	Export of goods	Z	0.0
+1ED678F9-598E-4BDB-BABF-89DC69B48D75	5	VATEX-SA-33	صادرات الخدمات من المملكة	Export of services	Z	0.0
+085A56B9-71A2-4FE7-888E-BB8BB8980F32	6	VATEX-SA-34-1	النقل الدولي للسلع	The international transport of Goods	Z	0.0
+66517828-154B-403F-A0E2-2434C53D8473	7	VATEX-SA-34-2	النقل الدولي للركاب	international transport of passengers	Z	0.0
+52A3768E-BFB8-4574-AB20-DA682112BCB7	8	VATEX-SA-34-3	الخدمات المرتبطة مباشرة أو عرضيا بتوريد النقل الدولي للركاب	services directly connected and incidental to a Supply of international passenger transport	Z	0.0
+DA1CE81F-41C1-49B8-AB4C-03D7BCDEE274	9	VATEX-SA-34-4	توريد وسائل النقل المؤهلة	Supply of a qualifying means of transport	Z	0.0

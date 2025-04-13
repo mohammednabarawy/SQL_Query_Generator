@@ -1,0 +1,13 @@
+Sample rows from table: mnrHotOption
+
+Name	Value
+smsMessage	تم تأكيد حجزكم رقم [1] ونشكر لكم اختياركم.
+smsMessage2	نرحب بكم ونأمل أن تقضوا معنا وقتاً ممتعاً.
+smsMessage3	نودعكم ونأمل أن تكونوا قضيتم معنا وقتاً ممتعاً
+CheckInColor	8454143
+CheckOutColor	33023
+AviColor	16777088
+UnAviColor	128
+CleanColor	16744703
+CloseColor	16744576
+MainColor	8404992

@@ -1,0 +1,10 @@
+Sample rows from table: mnrPrintType
+
+ID	Number	Name	LineWidth	ColWidth	DigitPrice	DigitQty	Type	bPaintLine	bDataOnly	bHidePrice	EndSpace	bHideColName	bFastReport	FRFileName	bBeginInAll	bSpaceBegin	bMatNormal	bMatService	bCollectMat
+70B80620-73BF-4C51-9777-CB2BA24DB96B	1	فاتورة ضريبية عادية	0	1	2	2	0	True	False	False	0	False	True	E:\ملفات العمل\شغل رسمي\FrxDesign_Ar\Bill\فاتورة ضريبية العقارية.frx	False	False	False	False	False
+01DDF423-B685-4C9A-A17E-4FFB38DEC319	2	فاتورة QR	0	1	2	2	0	True	False	False	0	False	True	E:\ملفات العمل\شغل رسمي\FrxDesign_Ar\Bill\فاتورة ضريبية فوزي.fr3	False	False	False	False	False
+EC07AF77-133B-4A19-9AAD-418081929C16	3	مشتريات	0	1	2	2	0	True	False	False	0	False	True	E:\FrxDesign_Ar\Bill\مشتريات.fr3	False	False	False	False	False
+D2EBC90A-FA61-4BC0-BF6A-3CE5CC88346C	4	فاتورة مبيعات الكترونية	0	1	2	2	0	True	False	False	0	False	True	E:\ملفات العمل\شغل رسمي\FrxDesign_Ar\Bill\فاتورة ضريبية مبسطة - المقاولات.frx	False	False	False	False	False
+C343F73A-B2C6-41DC-9BB7-B985179AA91A	1	سند قيد	0	1	2	2	2	True	False	False	0	False	True	f:\FrxDesign_Ar\Pay\يومية بالعرض.fr3	False	False	False	False	False
+5CBBB895-6393-41E1-B884-A5CC9BE4C2EF	2	يومية	0	1	2	2	2	True	False	False	0	False	True	d:\FrxDesign_Ar\Pay\يومية بالعرض.fr3	False	False	False	False	False
+C2D1264E-FE50-4B3F-872E-649F28E2F68C	3	سند صرف	0	1	2	2	2	True	False	False	0	False	True	D:\FrxDesign_Ar\Pay\سند صرف.fr3	False	False	False	False	False

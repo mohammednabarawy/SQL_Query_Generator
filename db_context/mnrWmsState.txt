@@ -1,0 +1,9 @@
+Sample rows from table: mnrWmsState
+
+ID	Number	Code	Name	LatinName	Color	Type	IsEditable	IsDefault	sTimeFlg	eTimeFlg	aRealTimeFlg
+C4F03321-4395-49C5-9E2D-0521697DAD43	1.0	W	انتظار بدء العمل	انتظار بدء العمل	15790320.0	1	True	True	False	False	NULL
+9F0DC96C-CA81-4FEE-BC54-1C681BBEB334	2.0	S	بدء العمل على الخط	بدء العمل على الخط	15790320.0	1	True	False	True	False	NULL
+C43BF4D7-3E8E-4F6A-9380-37A045659505	3.0	A	الحصول على موافقة الزبون	الحصول على موافقة الزبون	15790320.0	1	False	False	False	True	NULL
+D896BA27-AC14-41DA-95D0-8020941264F9	6.0	C	الانتهاء من العمل	الانتهاء من العمل	15790320.0	0	False	False	False	True	NULL
+4D55A008-3AE4-48C6-9E63-9DAACA49AD7A	5.0	L	الانتقال للعمل بخط آخر	الانتقال للعمل بخط آخر	15790320.0	1	False	False	False	False	NULL
+D81B3E6A-85E6-4443-9C26-9EE09A7DD227	4.0	P	انتظار القطع	انتظار القطع	15790320.0	1	False	False	False	True	NULL

@@ -1,0 +1,6 @@
+Sample rows from table: mnrUsers
+
+ID	Number	Name	LName	Password	UID	Security	Department	DepartmentManager	Address	EMail	MaxDisc	MinPrice	bDisable	FirstName	LastName	Website	Organization	Responsibility	Phone1	Phone2	Mobile	SalesmanID	bAudit
+4E534067-9D28-4388-ACF2-3BB3C1D303A7	1	مدير		@#$%$#^&^%$67SDf  }wzb{fvp#&&wevY{{vltnru|Pp~P{zw~RpRNFS@OOKMDp]WP@HVdHBeHUWGZI]L		True					NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	NULL	False
+0C95A48C-5F41-464C-954F-51231D600F76	NULL	WebUser		@#$%$#^&^%$67SDf!"A}tg^]GUyxwxwevY{zvotnru{Pq~S{zv~mpSNFPCOOJMDw]WQ@HUgHCdHZXG[H]O		False					0.0	0	False	WebUser	WebUser							00000000-0000-0000-0000-000000000000	False
+B23C0B22-366E-4486-9A47-8E3C3A798E4E	2	يحي		@#$%$#^&^%$67SDf!!# !f_Z@Rxyt{wdwVt{wlwnst|WpPxywROROGR@LLKLEqZPPAIWdKAeITWHUI\M	NULL	False					0.0	0	False									00000000-0000-0000-0000-000000000000	False
